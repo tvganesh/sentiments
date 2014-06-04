@@ -1,0 +1,17 @@
+{
+  "name": "SimpleSentimentAnalysisApp",
+  "description": "Simple Sentiment Analysis App",
+  "version": "0.9.1",
+  "dependencies": {
+    "express": "3.x",
+    "sentiment": "0.2.1",
+    "ntwitter": "0.5.0" 
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.3"
+  },
+  "engines": {
+    "node": "0.10.26"
+  }
+}
