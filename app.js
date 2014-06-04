@@ -20,13 +20,13 @@ app.configure(function() {
 // Sample keys for demo and article - you must get your own keys if you clone this application!
 // Create your own app at: https://dev.twitter.com/apps
 var tweeter = new twitter({
-	consumer_key: 'XDMBT427fgVzosqZlu07A',
-	consumer_secret: 'eWXL4TRv5B2UEHJ8cClCWt4Z2rF7yQIaVAbmj6A',
-	access_token_key: '14526702-uRxyEJuAcegZdlPahmMjY5gHIFleFiRL2ITpd0NR0',
-	access_token_secret: 'PrXTHWP2Mcpr7t1d7JCIaFlIR2yDcymeNFAhfqS9Y'
+	consumer_key: '7bsc9DPSqUFsUoXyD2TaZgvMi',
+	consumer_secret: 'cNpIYSir2V2k8akxEFlFhgSlVfT5Dut0y2msxWSQaF6BEPA5c3',
+	access_token_key: '7bsc9DPSqUFsUoXyD2TaZgvMi',
+	access_token_secret: 'cNpIYSir2V2k8akxEFlFhgSlVfT5Dut0y2msxWSQaF6BEPA5c3'
 });
 
-app.get('/twitterCheck', function (req, res) {
+app.get('/testtvg', function (req, res) {
 	tweeter.verifyCredentials(function (error, data) {
 		res.send("Hello, " + data.name + ".  I am in your twitters.");
 	});
