@@ -3,7 +3,7 @@ var express = require("express");
 var sentiment = require('sentiment');
 var twitter = require('ntwitter');
 
-var DEFAULT_TOPIC = "Justin Bieber";
+var DEFAULT_TOPIC = "Narendra Modi";
 
 // defensiveness against errors parsing request bodies...
 process.on('uncaughtException', function (err) {
