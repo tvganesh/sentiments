@@ -22,8 +22,8 @@ app.configure(function() {
 var tweeter = new twitter({
 	consumer_key: '7bsc9DPSqUFsUoXyD2TaZgvMi',
 	consumer_secret: 'cNpIYSir2V2k8akxEFlFhgSlVfT5Dut0y2msxWSQaF6BEPA5c3',
-	access_token_key: '7bsc9DPSqUFsUoXyD2TaZgvMi',
-	access_token_secret: 'cNpIYSir2V2k8akxEFlFhgSlVfT5Dut0y2msxWSQaF6BEPA5c3'
+	access_token_key: '88104355-rt11OjlhJVCR3D1wHdNB51V9ppddNKxw6DweYhg4k',
+	access_token_secret: '5lLS8Szd9cEOKioMGXDoaM248kIt2ZVsOsxfD1viHouMD'
 });
 
 app.get('/testtvg', function (req, res) {
