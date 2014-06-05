@@ -96,12 +96,15 @@ function beginMonitoring(phrase) {
 function sentimentImage() {
 	var avg = tweetTotalSentiment / tweetCount;
 	if (avg > 0.5) { // happy
+	    console.log("Positive");
 		return "/images/excited.png";
 	}
 	if (avg < -0.5) { // angry
+	    console.log("Negative");
 		return "/images/angry.png";
 	}
 	// neutral
+	console.log("Neutral");
 	return "/images/content.png";
 }
 
