@@ -114,7 +114,7 @@ app.get('/', function (req, res) {
 		"</HEAD>\n" +
 		"<BODY>\n" +
 		"<P>\n" +
-		"Welcome to the Twitter Sentiment Analysis app.<br>\n" + 
+		"Here are the results of the  Twitter Sentiment Analysis app.<br>\n" + 
 		"What would you like to monitor?\n" +
 		"</P>\n" +
 		"<FORM action=\"/monitor\" method=\"get\">\n" +
@@ -133,7 +133,7 @@ app.get('/', function (req, res) {
 			"</HEAD>\n" +
 			"<BODY>\n" +
 			"<P>\n" +
-			"The Twittersphere is feeling<br>\n" +
+			"This is it g<br>\n" +
 			"<IMG align=\"middle\" src=\"" + sentimentImage() + "\"/><br>\n" +
 			"about " + monitoringPhrase + ".<br><br>" +
 			"Analyzed " + tweetCount + " tweets...<br>" +
