@@ -96,15 +96,15 @@ function beginMonitoring(phrase) {
 function sentimentImage() {
 	var avg = tweetTotalSentiment / tweetCount;
 	if (avg > 0.5) { // happy
-	    console.log("Positive");
+	   
 		return "/images/excited.png";
 	}
 	if (avg < -0.5) { // angry
-	    console.log("Negative");
+	    
 		return "/images/angry.png";
 	}
 	// neutral
-	console.log("Neutral");
+	
 	return "/images/content.png";
 }
 
@@ -133,7 +133,7 @@ app.get('/', function (req, res) {
 			"</HEAD>\n" +
 			"<BODY>\n" +
 			"<P>\n" +
-			"This is it g<br>\n" +
+			"This is it <br>\n" +
 			"<IMG align=\"middle\" src=\"" + sentimentImage() + "\"/><br>\n" +
 			"about " + monitoringPhrase + ".<br><br>" +
 			"Analyzed " + tweetCount + " tweets...<br>" +
