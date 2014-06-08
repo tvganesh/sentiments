@@ -98,11 +98,11 @@ function sentimentImage() {
 	var avg = tweetTotalSentiment / tweetCount;
 	val = "Neutral";
 	if (avg > 0.5) { // happy
-	    val = "Happy";
+	    val = "Positive & happy";
 		return "/images/excited.png";
 	}
 	if (avg < -0.5) { // angry
-	    val = "Angry";
+	    val = "Negative & angry";
 		return "/images/angry.png";
 	}
 	// neutral
@@ -138,8 +138,8 @@ app.get('/', function (req, res) {
 			"Results of Twitter sentiment analysis <br>\n" +
 			"<IMG align=\"middle\" src=\"" + sentimentImage() + "\"/><br>\n" +
 			"about " + monitoringPhrase + ".<br><br>" +
-			"Analyzed " + tweetCount + " tweets...<br>" + "\"/><br>\n" +
-			"Sentiment is " + val + "\"/><br>\n" +
+			"Analyzed " + tweetCount + " tweets...<br>\n" 
+			"The sentiment in Twitterverse is " + val + "<br>\n" +
 			"</P>\n" +
 			"<A href=\"/reset\">Monitor another phrase</A>\n" +
 			"</BODY>";
