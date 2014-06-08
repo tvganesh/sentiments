@@ -3,7 +3,7 @@ var express = require("express");
 var sentiment = require('sentiment');
 var twitter = require('ntwitter');
 
-var DEFAULT_TOPIC = "Narendra Modi";
+var DEFAULT_TOPIC = "FIFA";
 
 // defensiveness against errors parsing request bodies...
 process.on('uncaughtException', function (err) {
@@ -95,12 +95,13 @@ function beginMonitoring(phrase) {
 
 function sentimentImage() {
 	var avg = tweetTotalSentiment / tweetCount;
+	var val = "Neutral";
 	if (avg > 0.5) { // happy
-	   
+	    val = "Happy";
 		return "/images/excited.png";
 	}
 	if (avg < -0.5) { // angry
-	    
+	    val = "Angry";
 		return "/images/angry.png";
 	}
 	// neutral
@@ -133,10 +134,11 @@ app.get('/', function (req, res) {
 			"</HEAD>\n" +
 			"<BODY>\n" +
 			"<P>\n" +
-			"This is it <br>\n" +
+			"Results of Twitter sentiment analysis <br>\n" +
 			"<IMG align=\"middle\" src=\"" + sentimentImage() + "\"/><br>\n" +
 			"about " + monitoringPhrase + ".<br><br>" +
-			"Analyzed " + tweetCount + " tweets...<br>" +
+			"Analyzed " + tweetCount + " tweets...<br>" + "\"/><br>\n" +
+			"Sentiment is " + val + "\"/><br>\n" +
 			"</P>\n" +
 			"<A href=\"/reset\">Monitor another phrase</A>\n" +
 			"</BODY>";
@@ -187,7 +189,7 @@ app.get('/hello', function (req, res) {
 app.get('/watchTwitter', function (req, res) {
 	var stream;
 	var testTweetCount = 0;
-	var phrase = 'bieber';
+	var phrase = 'FIFA';
 	// var phrase = 'ice cream';
 	tweeter.verifyCredentials(function (error, data) {
 		if (error) {
