@@ -35,6 +35,7 @@ app.get('/testtvg', function (req, res) {
 var tweetCount = 0;
 var tweetTotalSentiment = 0;
 var monitoringPhrase;
+var val="";
 
 app.get('/sentiment', function (req, res) {
 	res.json({monitoring: (monitoringPhrase !== null), 
@@ -95,7 +96,7 @@ function beginMonitoring(phrase) {
 
 function sentimentImage() {
 	var avg = tweetTotalSentiment / tweetCount;
-	var val = "Neutral";
+	val = "Neutral";
 	if (avg > 0.5) { // happy
 	    val = "Happy";
 		return "/images/excited.png";
