@@ -138,7 +138,7 @@ app.get('/', function (req, res) {
 			"Results of Twitter sentiment analysis <br>\n" +
 			"<IMG align=\"middle\" src=\"" + sentimentImage() + "\"/><br>\n" +
 			"about " + monitoringPhrase + ".<br><br>" +
-			"Analyzed " + tweetCount + " tweets...<br>\n" 
+			"Analyzed " + tweetCount + " tweets...<br>\n" +
 			"The sentiment in Twitterverse is " + val + "<br>\n" +
 			"</P>\n" +
 			"<A href=\"/reset\">Monitor another phrase</A>\n" +
