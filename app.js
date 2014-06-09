@@ -131,7 +131,7 @@ app.get('/', function (req, res) {
 			"<META http-equiv=\"refresh\" content=\"5; URL=http://" +
 			req.headers.host +
 			"/\">\n" +
-			"<title>Twitter Sentiment Analysis</title>\n" +
+			"<title>Twitter Sentiment Analysis -1</title>\n" +
 			"</HEAD>\n" +
 			"<BODY>\n" +
 			"<P>\n" +
