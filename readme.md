@@ -1,5 +1,5 @@
 ## Simple Sentiment Analysis application
-
+For details on this project and similar post please visit  my blog https://gigadom.wordpress.com/
 ![Ambivalent Smiley](http://simplesentimentanalysis.ng.bluemix.net/images/content.png "Ambivalent Smiley")
 
 We forked [this](https://hub.jazz.net/project/srich/Sentiment%20Analysis%20App/overview) project to use Git hosting and the continuous integration deployment pipeline.
